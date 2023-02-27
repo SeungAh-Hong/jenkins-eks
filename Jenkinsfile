@@ -6,10 +6,10 @@ pipeline {
   }
 
   environment {
-    gitName = 'KSLeeDev'
-    gitEmail = 'lllllks25@naver.com'
-    gitWebaddress = 'https://github.com/KSLeeDev/sb_code.git'
-    gitSshaddress = 'git@github.com:KSLeeDev/sb_code.git'
+    gitName = 'SeungAh-Hong'
+    gitEmail = 'ghdtmddk1516@naver.com'
+    gitWebaddress = 'https://github.com/SeungAh-Hong/sb_code.git'
+    gitSshaddress = 'git@github.com:SeungAh-Hong/sb_code.git'
     gitCredential = 'git_cre' // github credential 생성 시의 ID
   }
 
