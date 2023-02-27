@@ -91,9 +91,12 @@ pipeline {
         post {
             failure {
                 echo 'docker container deploy failure'
+                slackSend (color: '#FF0000', message: "FAILURE: docker container deployment '${env.JOB_NAME} [${env.BUILD_NUMBER}]' (${env.BUILD_URL})")
+              
             }
             success {
                 echo 'docker container deploy success'
+                slackSend (color: '#FF0000', message: "FAILURE: docker container deployment '${env.JOB_NAME} [${env.BUILD_NUMBER}]' (${env.BUILD_URL})")
             }
         }
     }
