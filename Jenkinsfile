@@ -71,9 +71,13 @@ pipeline {
         post {
             failure {
                 echo 'docker image push failure'
+                sh "docker image rm -f ${dockerHubRegistry}:${currentBuild.number}"
+                sh "docker image rm -f ${dockerHubRegistry}:latest"
             }
             success {
                 echo 'docker image push success'
+                sh "docker image rm -f ${dockerHubRegistry}:${currentBuild.number}"
+                sh "docker image rm -f ${dockerHubRegistry}:latest"
             }
         }
     }
