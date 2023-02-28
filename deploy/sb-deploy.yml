@@ -28,4 +28,4 @@ spec:
     spec:
       containers:
         - name: spring
-          image: seungahhong:sbimage:latest
+          image: seungahhong/sbimage:latest
